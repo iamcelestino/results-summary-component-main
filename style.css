@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --primary-Ligh-tred: hsl(0, 100%, 67%);
+    --primary-Orangey-yellow: hsl(39, 100%, 56%);
+    --primary-Greenteal: hsl(166, 100%, 37%);
+    --primary-Cobaltblue: hsl(234, 85%, 45%);
+
+    --GradientLight-slate-blue: hsl(252, 100%, 67%);
+    --GradientLight-royal-blue: hsl(241, 81%, 54%);
+    --GradientViolet-blue: hsla(256, 72%, 46%, 1);
+    --GradientPersian-blue: hsla(241, 72%, 46%, 0);
+
+    --Neutral-White: hsl(0, 0%, 100%);
+    --Neutral-Pale-blue: hsl(221, 100%, 96%);
+    --Neutral-Light-lavender: hsl(241, 100%, 89%);
+    --Neutral-Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#container{
+    border: 1px solid;
+}
+
+
+.result__container{
+    color: white;
+    background: 
+    linear-gradient(
+        var(--GradientViolet-blue), var(--GradientLight-slate-blue));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.result {
+    text-align: center;
+}
+
+
+
+.result span{
+    font-size: 3rem;
+}
+
+.result p{
+    text-align: center;
+    display: inline-block;
+    background: gray;
+    padding: 2rem 3.5rem;
+    border-radius: 600px;
+    margin: 2rem 0;
+}
+
+.result__container, 
+.summary__container{
+    padding: 1.5rem;
+}
+
+.result__container h3, p{
+    text-align: center;
+}
+
+.category, .category div{
+    display: flex;
+    align-items: center;
+}
+
+.category div{
+    gap: 10px;
+}
+
+.category{
+    justify-content: space-between;
+    background: var(--primary-Ligh-tred);
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 30px;
+    border:none;
+    background: var(--Neutral-Dark-gray-blue);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 500px){
+    body{
+        margin: auto;
+        max-width: 700px;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .result__container{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+}
+
