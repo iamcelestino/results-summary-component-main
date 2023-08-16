@@ -176,10 +176,10 @@ body{
 }
 
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 31.25em){
     body{
         margin: auto;
-        max-width: 700px;
+        max-width: 43.75em;
     }
 
     main{
