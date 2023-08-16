@@ -43,13 +43,7 @@ body{
     min-height: 100vh;
 }
 
-main{
-    margin: 0.8rem;
-}
 
-#container{
-    border: 1px solid;
-}
 
 
 .result__container{
@@ -61,11 +55,10 @@ main{
     border-bottom-right-radius: 30px;
 }
 
+
 .result {
     text-align: center;
 }
-
-
 
 .result span{
     font-size: 3rem;
@@ -79,7 +72,7 @@ main{
     padding: 2rem 3.5rem;
     border-radius: 600px;
     margin: 2rem 0;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .result__container, 
@@ -91,9 +84,14 @@ main{
     text-align: center;
 }
 
-.message {
+.message__container {
     max-width: 90%;
     margin: auto;
+}
+
+.message__container h3 {
+    font: 1.2rem;
+
 }
 
 .category, .category div{
@@ -110,6 +108,10 @@ main{
     margin: 1rem 0;
     padding: 0.8rem;
     border-radius: 8px;
+}
+
+.category span, .message, .result__container h3 {
+    color: rgb(197, 197, 197);
 }
 
 .Reaction{
@@ -129,8 +131,6 @@ main{
     background-color: var(--cobalt-blue-bg);
 }
 
-
-
 .Reaction h4{
     color: var(--light-red);
 }
@@ -148,7 +148,9 @@ main{
    color: var(--cobalt-blue);
 }
 
+
 .btn {
+    margin-top: 1rem;
     display: inline-block;
     width: 100%;
     padding: 0.8rem;
@@ -160,20 +162,43 @@ main{
     color: white;
 }
 
+.btn:hover {
+    background:
+    linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
 @media screen and (min-width: 500px){
     body{
         margin: auto;
         max-width: 700px;
     }
 
+    main{
+        margin: 0.8rem;
+    }
+
     #container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        box-shadow: 10px 10px 20px var(--pale-blue);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 20px;
     }
 
     .result__container{
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }
+
+
 }
 

@@ -13,7 +13,7 @@ const updateUI = (data) => {
       <img src="${data[0].icon}" alt="">
       <h4>${data[0].category}</h4>
     </div>
-    <p><span>${data[0].score}</span>/100</p>
+    <p> ${data[0].score}<span>/100</span></p>
   </div>
 
   <div class="category Memory">
@@ -21,7 +21,7 @@ const updateUI = (data) => {
       <img src="${data[1].icon}" alt="">
       <h4>${data[1].category}</h4>
     </div>
-    <p><span>${data[1].score}</span>/100</p>
+    <p> ${data[1].score}<span>/100</span></p>
   </div>
 
   <div class="category Verbal">
@@ -29,7 +29,7 @@ const updateUI = (data) => {
       <img src="${data[2].icon}" alt="">
       <h4>${data[2].category}</h4>
     </div>
-    <p><span>${data[2].score}</span>/100</p>
+    <p> ${data[2].score}<span>/100</span></p>
   </div>
 
   <div class="category visual ">
@@ -37,7 +37,7 @@ const updateUI = (data) => {
       <img src="${data[3].icon}" alt="">
       <h4>${data[3].category}</h4>
     </div>
-    <p><span>${data[3].score}</span>/100</p>
+    <p> ${data[3].score}<span>/100</span></p>
   </div>
     `;
     categoryContainer.innerHTML = html;
